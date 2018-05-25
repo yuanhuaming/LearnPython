@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ef3ec363-bdbe-48c4-a110-ac102813f2e1}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>python_aiohttp.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MyShow\GetData_zhihu.py" />
+    <Compile Include="MyShow\MyShow.py" />
+    <Compile Include="python_aiohttp.py" />
+    <Compile Include="python_base.py" />
+    <Compile Include="python_context.py" />
+    <Compile Include="python_coroutine.py" />
+    <Compile Include="python_csv.py" />
+    <Compile Include="python_datetime.py" />
+    <Compile Include="python_decorator.py" />
+    <Compile Include="python_flask.py" />
+    <Compile Include="python_functional.py" />
+    <Compile Include="python_lda.py" />
+    <Compile Include="python_magic_methods.py" />
+    <Compile Include="python_markov_chain.py" />
+    <Compile Include="python_metaclass.py" />
+    <Compile Include="python_numpy.py" />
+    <Compile Include="python_oneline.py" />
+    <Compile Include="python_requests.py" />
+    <Compile Include="python_restful_api.py" />
+    <Compile Include="python_spider.py" />
+    <Compile Include="python_sqlalchemy.py" />
+    <Compile Include="python_thread_multiprocess.py" />
+    <Compile Include="python_version36.py" />
+    <Compile Include="python_visual.py" />
+    <Compile Include="python_visual_animation.py" />
+    <Compile Include="python_wechat.py" />
+    <Compile Include="python_weibo.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Docker\requirements.txt" />
+    <Content Include="MyShow\static\css\dashboard.css" />
+    <Content Include="MyShow\static\favicon.ico" />
+    <Content Include="MyShow\static\js\bootstrap-typeahead.min.js" />
+    <Content Include="MyShow\static\js\bootstrap.min.js" />
+    <Content Include="MyShow\static\js\echarts.min.js" />
+    <Content Include="MyShow\static\js\jquery-3.0.0.min.js" />
+    <Content Include="MyShow\templates\base.html" />
+    <Content Include="MyShow\templates\error.html" />
+    <Content Include="MyShow\templates\index.html" />
+    <Content Include="Text\Obama.txt" />
+    <Content Include="Text\Walden.txt" />
+    <Content Include="Text\Zarathustra.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Docker" />
+    <Folder Include="MyShow" />
+    <Folder Include="MyShow\static" />
+    <Folder Include="MyShow\static\css" />
+    <Folder Include="MyShow\static\js" />
+    <Folder Include="MyShow\templates" />
+    <Folder Include="Text" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
