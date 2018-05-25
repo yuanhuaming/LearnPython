@@ -48,5 +48,6 @@ async def ticker(delay, to):
 
 
 # Asynchronous Comprehensions
+ 
 result = [i async for i in aiter() if i % 2]
 result = [await fun() for fun in funcs if await condition()]

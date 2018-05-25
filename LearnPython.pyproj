@@ -19,10 +19,23 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Base\Base.py" />
+    <Compile Include="Base\classdefine.py" />
+    <Compile Include="Base\demo.py" />
+    <Compile Include="Base\matplotlib\demo.py" />
+    <Compile Include="Base\sort.py" />
+    <Compile Include="Base\spiders\spider.py" />
+    <Compile Include="Base\常用函数\dics.py" />
+    <Compile Include="Base\常用函数\lists.py" />
+    <Compile Include="Base\常用函数\sets.py" />
+    <Compile Include="Base\常用函数\strings.py" />
+    <Compile Include="Base\常用函数\tuples.py" />
+    <Compile Include="Base\常用函数\集合.py" />
+    <Compile Include="Base\循环.py" />
+    <Compile Include="Base\继承.py" />
     <Compile Include="MyShow\GetData_zhihu.py" />
     <Compile Include="MyShow\MyShow.py" />
     <Compile Include="python_aiohttp.py" />
-    <Compile Include="python_base.py" />
     <Compile Include="python_context.py" />
     <Compile Include="python_coroutine.py" />
     <Compile Include="python_csv.py" />
@@ -41,14 +54,12 @@
     <Compile Include="python_spider.py" />
     <Compile Include="python_sqlalchemy.py" />
     <Compile Include="python_thread_multiprocess.py" />
-    <Compile Include="python_version36.py" />
     <Compile Include="python_visual.py" />
     <Compile Include="python_visual_animation.py" />
     <Compile Include="python_wechat.py" />
     <Compile Include="python_weibo.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Docker\requirements.txt" />
     <Content Include="MyShow\static\css\dashboard.css" />
     <Content Include="MyShow\static\favicon.ico" />
     <Content Include="MyShow\static\js\bootstrap-typeahead.min.js" />
@@ -63,12 +74,15 @@
     <Content Include="Text\Zarathustra.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Docker" />
+    <Folder Include="Base\matplotlib\" />
+    <Folder Include="Base\spiders\" />
+    <Folder Include="Base\常用函数\" />
     <Folder Include="MyShow" />
     <Folder Include="MyShow\static" />
     <Folder Include="MyShow\static\css" />
     <Folder Include="MyShow\static\js" />
     <Folder Include="MyShow\templates" />
+    <Folder Include="Base\" />
     <Folder Include="Text" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

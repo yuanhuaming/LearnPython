@@ -1,4 +1,4 @@
-# _*_coding:utf-8-*_
+# coding:utf-8
 import numpy as np  
 # 定义矩阵变量并输出变量的一些属性
 # 用np.array()生成矩阵
@@ -11,12 +11,13 @@ print('~    ~    ~   shape: ',arr.shape)
 print('~    ~    ~   size: ', arr.size)
 
 # 输出结果：
+'''
 [[1 2 3]
  [4 5 6]]
 number of arr dimensions:  2
 ~    ~    ~   shape:  (2, 3)
 ~    ~    ~   size:  6  
-
+'''
 # 定义一些特殊矩阵
 # 指定矩阵数据类型
 arr=np.array([[1,2,3],
